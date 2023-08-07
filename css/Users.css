@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+header {
+  background-color: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+main {
+  padding: 20px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.tbl-header {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.tbl-header table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tbl-header th {
+  padding: 10px;
+  text-align: left;
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+.tbl-content {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.tbl-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tbl-content td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .tbl-header,
+  .tbl-content {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .tbl-header {
+    margin-top: 60px;
+  }
+
+  .tbl-header table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .tbl-header th {
+    padding: 10px;
+    text-align: left;
+    background-color: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .tbl-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .tbl-content td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+
+.slideInDown {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInRight {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
